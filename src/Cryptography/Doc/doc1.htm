@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body style="padding: 25px; color: rgb(0, 0, 0); background-color: rgb(248, 248, 247);">
+    <p style="text-align: center;"><strong><u><span style='font-family: "Trebuchet MS", Helvetica, sans-serif; font-size: 22px; color: rgb(44, 130, 201);'>CRYPTOGRAPHY</span></u></strong></p>
+    <p><span style='font-family: "Trebuchet MS", Helvetica, sans-serif; font-size: 18px; color: rgb(65, 168, 95);'>Cryptography is the study of secure communications techniques that allow only the sender and intended recipient of a message to view its contents. The term is derived from the Greek word kryptos, which means hidden. It is closely associated to encryption, which is the act of scrambling ordinary text into what's known as ciphertext and then back again upon arrival. In addition, cryptography also covers the obfuscation of information in images using techniques such as microdots or merging. Ancient Egyptians were known to use these methods in complex hieroglyphics, and Roman Emperor Julius Caesar is credited with using one of the first modern ciphers.</span></p>
+    <p><span style='font-family: "Trebuchet MS", Helvetica, sans-serif; font-size: 18px; color: rgb(65, 168, 95);'>When transmitting electronic data, the most common use of cryptography is to encrypt and decrypt email and other plain-text messages. The simplest method uses the symmetric or 'secret key' system. Here, data is encrypted using a secret key, and then both the encoded message and secret key are sent to the recipient for decryption. The problem? If the message is intercepted, a third party has everything they need to decrypt and read the message. To address this issue, cryptologists devised the asymmetric or 'public key' system. In this case, every user has two keys: one public and one private. Senders request the public key of their intended recipient, encrypt the message and send it along. When the message arrives, only the recipient's private key will decode it - meaning theft is of no use without the corresponding private key.</span></p>
+    <p><br></p>
+    <hr>
+    <p><br></p>
+    <p style="text-align: center;"><span style='font-family: "Trebuchet MS", Helvetica, sans-serif; font-size: 20px;'><u><strong><span style="color: rgb(147, 101, 184);">CAESAR CIPHER</span></strong></u></span></p>
+    <p><span style='font-family: "Trebuchet MS", Helvetica, sans-serif; font-size: 18px; color: rgb(97, 189, 109);'>The Caesar Cipher technique is one of the earliest and simplest method of encryption technique. It's simply a type of substitution cipher, i.e., each letter of a given text is replaced by a letter some fixed number of positions down the alphabet. For example, with a shift of 1, A would be replaced by B, B would become C, and so on. The method is apparently named after Julius Caesar, who apparently used it to communicate with his officials. &nbsp;Thus, to cipher a given text we need an integer value, known as shift which indicates the number of positions each letter of the text has been moved down. &nbsp;The encryption can be represented using modular arithmetic by first transforming the letters into numbers, according to the scheme, A = 0, B = 1, ... , Z = 25. The procedure is as follows:</span></p>
+    <ol>
+        <li style='font-family: "Trebuchet MS", Helvetica, sans-serif; font-size: 18px; color: rgb(97, 189, 109);'>Traverse the given text one character at a time .</li>
+        <li style='font-family: "Trebuchet MS", Helvetica, sans-serif; font-size: 18px; color: rgb(97, 189, 109);'>For each character, transform the given character as per the rule, depending on whether we're encrypting or decrypting the text.</li>
+        <li style='font-family: "Trebuchet MS", Helvetica, sans-serif; font-size: 18px; color: rgb(97, 189, 109);'>Return the new string generated.</li>
+    </ol>
+    <p><br></p>
+    <hr>
+    <p><br></p>
+    <p style="text-align: center;"><span style='font-family: "Trebuchet MS", Helvetica, sans-serif; font-size: 20px;'><strong><u><span style="color: rgb(147, 101, 184);">BIFID CIPHER</span></u></strong></span></p>
+    <p><span style='font-family: "Trebuchet MS", Helvetica, sans-serif; font-size: 18px; color: rgb(97, 189, 109);'>In classical cryptography, the bifid cipher is a cipher which combines the Polybius square with transposition, and uses fractionation to achieve diffusion. It was invented around 1901 by Felix Delastelle.&nbsp;</span></p>
+    <ol>
+        <li style='font-family: "Trebuchet MS", Helvetica, sans-serif; font-size: 18px; color: rgb(97, 189, 109);'>First, a mixed alphabet Polybius square is drawn up, where the I and the J share their position.</li>
+        <li style='font-family: "Trebuchet MS", Helvetica, sans-serif; font-size: 18px; color: rgb(97, 189, 109);'>&nbsp;The message is converted to its coordinates in the usual manner, but they are written vertically beneath.&nbsp;</li>
+        <li style='font-family: "Trebuchet MS", Helvetica, sans-serif; font-size: 18px; color: rgb(97, 189, 109);'>They are then read out in rows.&nbsp;</li>
+        <li style='font-family: "Trebuchet MS", Helvetica, sans-serif; font-size: 18px; color: rgb(97, 189, 109);'>Then divided up into pairs again, and the pairs turned back into letters using the square.&nbsp;</li>
+        <li style='font-family: "Trebuchet MS", Helvetica, sans-serif; font-size: 18px; color: rgb(97, 189, 109);'>In this way, each ciphertext character depends on two plaintext characters, so the bifid is a digraph cipher, like the Playfair cipher.&nbsp;</li>
+        <li style='font-family: "Trebuchet MS", Helvetica, sans-serif; font-size: 18px; color: rgb(97, 189, 109);'>To decrypt, the procedure is simply reversed.</li>
+    </ol>
+    <p><span style='font-family: "Trebuchet MS", Helvetica, sans-serif; font-size: 18px; color: rgb(97, 189, 109);'>Longer messages are first broken up into blocks of fixed length, called the period, and the above encryption procedure is applied to each block. One way to detect the period uses bigram statistics on ciphertext letters separated by half the period. For even periods, p, ciphertext letters at a distance of p/2 are influenced by two plaintext letters, but for odd periods, p, ciphertext letters at distances of p/2 (rounded either up or down) are influenced by three plaintext letters. Thus, odd periods are more secure than even against this form of cryptanalysis, because it would require more text to find a statistical anomaly in trigram plaintext statistics than bigram plaintext statistics.</span></p>
+    <p><br></p>
+    <hr>
+    <p><br></p>
+    <p style='color: rgb(0, 0, 0); font-family: "Times New Roman"; font-size: medium; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; margin-bottom: 10px !important;'><span style='font-family: "Trebuchet MS", Helvetica, sans-serif; font-size: 20px;'><u><strong style="font-weight: 700;"><span style="color: rgb(147, 101, 184);">TRIFID CIPHER</span></strong></u></span></p>
+    <p style='margin-bottom: 10px !important; color: rgb(0, 0, 0); font-family: "Times New Roman"; font-size: medium; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;'><span style='font-family: "Trebuchet MS", Helvetica, sans-serif; font-size: 18px; color: rgb(97, 189, 109);'>The trifid cipher is a classical cipher invented by Felix Delastelle and described in 1902.Extending the principles of Delastelle's earlier bifid cipher, it combines the techniques of fractionation and transposition to achieve a certain amount of confusion and diffusion: each letter of the ciphertext depends on three letters of the plaintext and up to three letters of the key.&nbsp;</span></p>
+    <ol style='color: rgb(0, 0, 0); font-family: "Times New Roman"; font-size: medium; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;'>
+        <li style='font-family: "Trebuchet MS", Helvetica, sans-serif; font-size: 18px; color: rgb(97, 189, 109);'>The trifid cipher uses a table to fractionate each plaintext letter into a trigram, mixes the constituents of the trigrams, and then applies the table in reverse to turn these mixed trigrams into ciphertext letters.&nbsp;</li>
+        <li style='font-family: "Trebuchet MS", Helvetica, sans-serif; font-size: 18px; color: rgb(97, 189, 109);'>Delastelle notes that the most practical system uses three symbols for the trigrams: In order to split letters into three parts, it is necessary to represent them by a group of three signs or numbers.&nbsp;</li>
+        <li style='font-family: "Trebuchet MS", Helvetica, sans-serif; font-size: 18px; color: rgb(97, 189, 109);'>Knowing that n objects, combined in trigrams in all possible ways, give n * n * n = n^3, we recognize that three is the only value for n; two would only give 23 = 8 trigrams, while four would give 43 = 64, but three give 33 = 27.</li>
+    </ol>
+    <p><br></p>
+    <hr>
+    <p><br></p>
+    <p style="text-align: center;"><span style='font-family: "Trebuchet MS", Helvetica, sans-serif; font-size: 20px;'><strong><u><span style="color: rgb(147, 101, 184);">RAIL FENCE CIPHER</span></u></strong></span></p>
+    <p><span style='font-family: "Trebuchet MS", Helvetica, sans-serif; font-size: 18px; color: rgb(97, 189, 109);'>Given a plain-text message and a numeric key, cipher/de-cipher the given text using Rail Fence algorithm. &nbsp;The rail fence cipher (also called a zigzag cipher) is a form of transposition cipher. It derives its name from the way in which it is encoded. In a transposition cipher, the order of the alphabets is re-arranged to obtain the cipher-text.&nbsp;</span></p>
+    <ol>
+        <li style='font-family: "Trebuchet MS", Helvetica, sans-serif; font-size: 18px; color: rgb(97, 189, 109);'>In the rail fence cipher, the plain-text is written downwards and diagonally on successive rails of an imaginary fence.</li>
+        <li style='font-family: "Trebuchet MS", Helvetica, sans-serif; font-size: 18px; color: rgb(97, 189, 109);'>When we reach the bottom rail, we traverse upwards moving diagonally, after reaching the top rail, the direction is changed again. Thus, the alphabets of the message are written in a zig-zag manner.</li>
+        <li style='font-family: "Trebuchet MS", Helvetica, sans-serif; font-size: 18px; color: rgb(97, 189, 109);'>After each alphabet has been written, the individual rows are combined to obtain the cipher-text.</li>
+        <li style='font-family: "Trebuchet MS", Helvetica, sans-serif; font-size: 18px; color: rgb(97, 189, 109);'>As for decryption, the number of columns in rail fence cipher remains equal to the length of plain-text message. And the key corresponds to the number of rails.</li>
+        <li style='font-family: "Trebuchet MS", Helvetica, sans-serif; font-size: 18px; color: rgb(97, 189, 109);'>Hence, rail matrix can be constructed accordingly. Once we've got the matrix we can figure-out the spots where texts should be placed (using the same way of moving diagonally up and down alternatively ).</li>
+        <li style='font-family: "Trebuchet MS", Helvetica, sans-serif; font-size: 18px; color: rgb(97, 189, 109);'>Then, we fill the cipher-text row wise. After filling it, we traverse the matrix in zig-zag manner to obtain the original text.</li>
+    </ol>
+    <p><br></p>
+    <hr>
+    <p><br></p>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+CREATE TABLE signup (
+  id      NUMBER(10) NOT NULL,
+  name   VARCHAR2(100) NOT NULL,
+  email   VARCHAR2(100) NOT NULL,
+  password   VARCHAR2(100) NOT NULL,
+  CONSTRAINT signup_pk PRIMARY KEY (id)
+);
+
+CREATE SEQUENCE signup_id
+START WITH 1001
+INCREMENT BY 3;
+
+CREATE OR REPLACE TRIGGER signup_on_insert
+  BEFORE INSERT ON signup
+  FOR EACH ROW
+BEGIN
+  SELECT signup_id.nextval
+  INTO :new.id
+  FROM dual;
+END;
+/
+
+
+/*
+DROP TABLE signup CASCADE CONSTRAINTS;
+
+DELETE FROM signup;
+
+DROP SEQUENCE signup_id;
+
+ALTER TABLE signup
+ADD CONSTRAINT signup_pk PRIMARY KEY (id);
+
+select id,name,email,password from signup ;
+/*
+
+1001
+smart001@W
+ravikant@gmail.com
+
+1004
+ravi@yahoo.co.in
+SMART001@c
+
+ORACLE SQL: connect
+system
+oracle
+
+##SETUP 2 accounts and generate pass words as google disabled less secure account access which is smtp
+
+Careless coding is the path to the dark side.
+
+Do all these steps, otherwise the error will persists.
+
+-You must have to log into just one gmail account (the one you are using to send email).
+
+-Then go to https://www.google.com/settings/security/lesssecureapps 
+and Turn On this feature.
+
+-And last go to https://accounts.google.com/DisplayUnlockCaptcha 
+and click Continue.
