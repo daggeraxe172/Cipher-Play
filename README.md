@@ -1,4 +1,4 @@
-# CryptoLearn
+# CryptoLearn JAVA GUI
 Cryptography is the study of secure communications techniques that allow only the sender and intended recipient of a message to view its contents.
 When transmitting electronic data, the most common use of cryptography is to encrypt and decrypt email and other plain-text messages. 
 
@@ -10,7 +10,7 @@ When transmitting electronic data, the most common use of cryptography is to enc
 
 4.RAIL FENCE CIPHER
 
-WATCH the video to understand full implementation.  
+WATCH the video to understand full implementation of this JAVA GUI app.  
 
 GO TO : CryptoLearn/src/Cryptography/Doc/signup db.txt to understand the database
 
