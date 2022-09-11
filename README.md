@@ -10,5 +10,11 @@ When transmitting electronic data, the most common use of cryptography is to enc
 
 4.RAIL FENCE CIPHER
 
+WATCH the video to understand full implementation.  
+
+GO TO : CryptoLearn/src/Cryptography/Doc/signup db.txt to understand the database
+
+Dont forget to change the .html files and song file to your ABSOLUTE path.
+
 ![cryptocipherscreen](https://user-images.githubusercontent.com/68988574/189520078-12aab0ef-0d33-4d68-8aa4-4083aed3977d.jpg)
 
