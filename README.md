@@ -1,4 +1,4 @@
-# CryptoLearn JAVA GUI
+# Cipher Play JAVA GUI
 Link to Video Demo
 https://drive.google.com/drive/folders/1pVklLsHPlHPOzV1Srp7SaQ93k77chAyT?usp=sharing
 <br>
